@@ -42,7 +42,7 @@
         <label for="nom">Votre nom</label>
         <input type="text" id="nom" name="nom" placeholder="Ada Lovelace">
         <label for="email">Votre email</label>
-        <input type="email" id="email" name="email" placeholder="ada@lovelace.io">
+        <input type="email" id="email" name="email" placeholder="ada@lovelace.io" oninput="validateEmail(this)">
         <label for="message">Votre message</label>
         <textarea id="message" name="message" placeholder="Bonjour..."></textarea>
         <button type="submit">Envoyer</button>
