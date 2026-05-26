@@ -1,0 +1,198 @@
+/* =========================================
+   EXERCICE 2 — Mise en page avec CSS
+   Lovelace Factory
+   =========================================
+   Lis les commentaires et complète chaque section.
+   Ouvre le navigateur pour voir le résultat en direct.
+   ========================================= */
+
+
+/* -----------------------------------------
+   1. RESET ET BASE
+   - box-sizing: border-box sur tous les éléments
+   - Supprime marges et paddings par défaut
+   - Choisis une police lisible (font-family)
+   - Couleur de texte et fond sur body
+----------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+
+/* -----------------------------------------
+   2. HEADER ET NAVIGATION
+   - Couleur de fond sur header
+   - Aligne les liens horizontalement (flexbox sur nav)
+   - Espace entre les liens
+   - Stylise les liens : couleur, pas de soulignement
+   - Effet hover
+----------------------------------------- */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav {
+  background-color: #333;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+nav a:hover {
+  color: #ff6347;
+}
+
+
+/* -----------------------------------------
+   3. SECTION HERO
+   - Centre le contenu
+   - Fond coloré + padding
+   - Stylise h1 et .accroche
+----------------------------------------- */
+.hero {
+  background-color: #ff6347;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.hero .accroche {
+  font-size: 1.5em;
+  
+}
+
+
+/* -----------------------------------------
+   4. BOUTON PRINCIPAL
+   - Fond coloré, couleur texte, padding, border-radius
+   - Supprime le soulignement (c'est un <a>)
+   - Effet hover
+----------------------------------------- */
+.bouton-principal {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.bouton-principal:hover {
+  background-color: #ff6347;
+}
+
+
+/* -----------------------------------------
+   5. SECTION FONCTIONNALITÉS
+   - Padding sur la section
+   - Stylise h2
+   - Supprime les puces par défaut de .liste-features
+   - Ajoute un indicateur visuel sur les li
+----------------------------------------- */
+.fonctionnalites {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.fonctionnalites h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.liste-features {
+  list-style: none;
+  padding: 0;
+}
+.liste-features li {  
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative; 
+}
+
+
+/* -----------------------------------------
+   6. SECTION ÉQUIPE
+   - Fond légèrement différent
+   - Image responsive (max-width: 100%)
+   - Centre le contenu
+----------------------------------------- */
+.equipe {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 40px 20px;
+}
+.equipe img {
+  max-width: 100%;
+  height: auto; 
+}
+
+
+/* -----------------------------------------
+   7. FORMULAIRE DE CONTACT
+   - Champs en colonne (display: flex + flex-direction: column)
+   - max-width sur le form
+   - Labels en gras avec espacement
+   - Inputs et textarea : width 100%, padding, bordure
+   - Stylise le bouton submit
+----------------------------------------- */
+.contact {
+  padding: 40px 20px;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact textarea {
+  min-height: 120px;
+}
+.contact button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* -----------------------------------------
+   8. FOOTER
+   - Fond sombre, texte clair, centré, padding
+----------------------------------------- */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
